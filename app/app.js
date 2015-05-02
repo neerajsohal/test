@@ -30,5 +30,6 @@ define([
         ]).run(function() {
             console.log('Application Started');
         })
+        window.app = app;
         return app;
     });

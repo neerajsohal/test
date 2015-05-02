@@ -10,8 +10,10 @@ require.config({
         'angular-sanitize': '../vendor/angular-sanitize/angular-sanitize',
         'angular-animate': '../vendor/angular-animate/angular-animate',
 
-        'ng-cordova': "../vendor/ngCordova/dist/ng-cordova.min",
+        'ng-cordova': "../vendor/ngCordova/dist/ng-cordova",
         
+        "leaflet": "../vendor/leaflet/dist/leaflet",
+        "angular-leaflet-directive": "../vendor/angular-leaflet-directive/dist/angular-leaflet-directive",
         "text": "../vendor/requirejs-text/text",
         "async": '../vendor/requirejs-plugins/src/async',
         'underscore' : '../vendor/underscore/underscore',
@@ -39,6 +41,9 @@ require.config({
         'ng-cordova' : {
             exports: 'ngCordova'
         },
+        'angular-leaflet-directive': {
+            deps: ['leaflet']
+        }
 
     }
 

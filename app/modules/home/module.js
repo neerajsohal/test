@@ -1,11 +1,11 @@
 define([
         'angular',
         './namespace',
-        '../../app',
+        '../../core/namespace',
+        'ng-cordova',        
     ],
-    function(angular, namespace, app) {
+    function(angular, namespace, namespaceCore) {
         'use strict';
-
-        return angular.module(namespace, []);
+        return angular.module(namespace, ['ngCordova', namespaceCore]);
 
     });
